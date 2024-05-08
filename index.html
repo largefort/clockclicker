@@ -83,17 +83,11 @@
         #openBtn:hover {
             background-color: #333;
         }
-          #time-display {
-            margin-top: 10px;
-            text-align: center;
-            font-size: 16px;
-            font-weight: bold;
-        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div id="time-display"></div>
+        <div id="time-display">Time Display</div>
         <canvas id="clockCanvas" width="300" height="300"></canvas>
         <div id="openBtn" onclick="toggleNav()">&#9654;</div>
         <div id="left-sidebar" class="sidebar">
@@ -119,6 +113,7 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
     <script>
         function openNav() {
             document.getElementById("left-sidebar").style.width = "250px";
